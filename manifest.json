@@ -11,5 +11,6 @@
   "browser_action": {
     "default_title": "navigation"
   },
+  "web_accessible_resources": ["assets/*.png"],
   "permissions": ["activeTab"]
 }
