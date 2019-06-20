@@ -2,7 +2,7 @@ function scrollToNextTarget(targetElement) {
   targetElement[currentTargetIndex].scrollIntoView({ block: 'start' });
   window.scrollBy(0, -300);
 
-  highlightTarget(targetElement);
+  highlightTarget(targetElement[currentTargetIndex]);
 }
 
 function highlightTarget(targetElement) {
@@ -91,8 +91,8 @@ function displayButtons() {
   `;
 
   return `
-    <input type="button" id="github_extension_prevButton" style="${buttonStyle} ${prevStyle}" />
-    <input type="button" id="github_extension_nextButton" style="${buttonStyle} ${nextStyle}" />
+    <input type="button" id="github_extension_prevButton" style="${buttonStyle} ${prevStyle}" title="Previous discussion" />
+    <input type="button" id="github_extension_nextButton" style="${buttonStyle} ${nextStyle}" title="Next discussion" />
   `;
 }
 
