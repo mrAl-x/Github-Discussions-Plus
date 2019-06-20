@@ -2,10 +2,7 @@ document.addEventListener(
   'DOMContentLoaded',
   function() {
     document.querySelector('#next').addEventListener('click', onNext, false);
-
-    function onNext() {
-      chrome.tabs.query({ currentWindow: true, active: true }, function(tabs) {
-        const div = document.createElement('div');
+iv = document.createElement('div');
 
         document.body.appendChild(div);
 
@@ -14,9 +11,7 @@ document.addEventListener(
     }
 
     function addButton(res) {
-      const div = document.createElement('div');
-      div.textContent = `${res.count} mrAl-x`;
-
+      con
       document.body.appendChild(div);
     }
   },

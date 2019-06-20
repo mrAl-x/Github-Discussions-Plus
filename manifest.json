@@ -1,7 +1,6 @@
 {
   "name": "github",
-  "version": "1.0",
-  "manifest_version": 2,
+  "version": "1._version": 2,
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
