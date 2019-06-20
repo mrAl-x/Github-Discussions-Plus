@@ -76,7 +76,6 @@ function displayButtons() {
   const buttonStyle = `
     width: 28px;
     height: 28px;
-    background-size: 100% 100%;
     border: 1px solid #D5D6D6;
     border-radius: 4px;
     cursor: pointer;
@@ -84,10 +83,12 @@ function displayButtons() {
 
   const prevStyle = `
     background: url('${prevIconUrl}') #FFFFFF no-repeat center;
+    background-size: 22px;
   `;
 
   const nextStyle = `
     background: url('${nextIconUrl}') #FFFFFF no-repeat center;
+    background-size: 22px;
   `;
 
   return `
