@@ -5,14 +5,16 @@ This is currently only being displayed in the "PR Files View" mode of Github.
 
 Note this is an alpha release so bugs are bound to happen and more features/UI will be implemented in the future.
 
-If you can't find the UI try refreshing the files view page
+If you can't find the UI try refreshing
+
+![Github Dicussions + Demo Screenshot](https://nextcloud.webo.hosting/s/3cAr88JnAkTonWE/preview)
 
 ## Installation
 You can (soon) install the extension via Chrome's Web store:
 [Chrome Extension - Web Store](https://chrome.google.com/webstore/category/extensions) - coming soon
 
 Or you can:
-1. Clone the repo
+1. Clone/download the repo
 2. Head over to `chrome://extensions`
 3. Enable "Developer Mode"
 4. Click "Load unpacked"
