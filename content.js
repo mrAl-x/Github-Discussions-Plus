@@ -38,11 +38,15 @@ function handleClick(type) {
     after all the DOM is "officially" rendered
   */
 
-  const targetElement = document.querySelectorAll('#files .inline-comments.js-inline-comments-container');
+  const targetElement = document.querySelectorAll(
+    '#files .inline-comments.js-inline-comments-container'
+  );
   const totalTargetsNumber = targetElement.length;
 
   if (type === 'next') {
-    currentTargetIndex !== null ? incrementTargetIndex(totalTargetsNumber) : (currentTargetIndex = 0);
+    currentTargetIndex !== null
+      ? incrementTargetIndex(totalTargetsNumber)
+      : (currentTargetIndex = 0);
   } else {
     currentTargetIndex !== null
       ? subtractTargetIndex(totalTargetsNumber)
@@ -56,7 +60,7 @@ function displayButtonContainer() {
   const containerStyle = `
     position: absolute;
     top: 50%;
-    right: 180px;
+    right: 340px;
     width: 80px;
     display: flex;
     justify-content: space-between;
@@ -105,5 +109,9 @@ wrapper.innerHTML = displayButtons();
 
 document.querySelector('.pr-toolbar').append(wrapper);
 
-document.querySelector('#github_extension_prevButton').addEventListener('click', () => handleClick('prev'));
-document.querySelector('#github_extension_nextButton').addEventListener('click', () => handleClick('next'));
+document
+  .querySelector('#github_extension_prevButton')
+  .addEventListener('click', () => handleClick('prev'));
+document
+  .querySelector('#github_extension_nextButton')
+  .addEventListener('click', () => handleClick('next'));
